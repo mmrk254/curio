@@ -1,0 +1,15 @@
+# Node and Java build artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+backend/target/
+backend/build/
+
+# Local configuration and editor files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.iml
+*.log

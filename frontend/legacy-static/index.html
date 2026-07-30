@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURIO Education ERP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="CURIO home">
+          <span class="brand-mark" aria-hidden="true">C</span>
+          <span>
+            <strong>CURIO</strong>
+            <small>Education ERP</small>
+          </span>
+        </a>
+
+        <nav class="nav-list">
+          <a class="nav-item active" href="#" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            Dashboard
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon" aria-hidden="true">□</span>
+            Students
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon" aria-hidden="true">◇</span>
+            Academics
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon" aria-hidden="true">₵</span>
+            Finance
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon" aria-hidden="true">○</span>
+            Parents
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon" aria-hidden="true">≡</span>
+            Reports
+          </a>
+        </nav>
+
+        <section class="pilot-panel" aria-label="Pilot status">
+          <p>Pilot readiness</p>
+          <strong>Month 1</strong>
+          <div class="progress-track" aria-hidden="true">
+            <span style="width: 28%"></span>
+          </div>
+          <small>Auth, database, and school setup foundation.</small>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">African school operations</p>
+            <h1>Command Center</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="schoolSearch" type="search" placeholder="Search students, invoices, classes" />
+            </label>
+            <button class="icon-button" type="button" aria-label="Notifications">!</button>
+            <button class="primary-button" type="button">New Admission</button>
+          </div>
+        </header>
+
+        <section class="school-banner" aria-label="School overview">
+          <div class="banner-copy">
+            <p id="todayLabel">Today</p>
+            <h2>St. Bakhita Junior School</h2>
+            <span>Term 2 operations are stable. Admissions, attendance, and fee collection need attention this week.</span>
+          </div>
+          <div class="banner-art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="building">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="field"></div>
+          </div>
+        </section>
+
+        <section class="metrics-grid" aria-label="Key metrics">
+          <article class="metric-card">
+            <span class="metric-label">Active Students</span>
+            <strong>1,248</strong>
+            <small class="trend good">+42 this term</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Attendance</span>
+            <strong>94.6%</strong>
+            <small class="trend good">Morning roll call</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Fee Balance</span>
+            <strong>KSh 2.8M</strong>
+            <small class="trend warn">138 open accounts</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Open Applications</span>
+            <strong>86</strong>
+            <small class="trend">12 awaiting review</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Live operations</p>
+                <h2>School Flow</h2>
+              </div>
+              <div class="tabs" role="tablist" aria-label="School flow views">
+                <button class="tab active" type="button" data-tab="students">Students</button>
+                <button class="tab" type="button" data-tab="finance">Finance</button>
+                <button class="tab" type="button" data-tab="academics">Academics</button>
+              </div>
+            </div>
+
+            <div class="flow-board active" data-panel="students">
+              <article>
+                <span>Admissions</span>
+                <strong>24</strong>
+                <small>New files this week</small>
+              </article>
+              <article>
+                <span>Transfers</span>
+                <strong>7</strong>
+                <small>Principal approval</small>
+              </article>
+              <article>
+                <span>Missing Documents</span>
+                <strong>31</strong>
+                <small>Birth certificate or photo</small>
+              </article>
+            </div>
+
+            <div class="flow-board" data-panel="finance">
+              <article>
+                <span>Invoices Sent</span>
+                <strong>1,120</strong>
+                <small>Term 2 billing</small>
+              </article>
+              <article>
+                <span>Payments Today</span>
+                <strong>KSh 486K</strong>
+                <small>MPESA and bank</small>
+              </article>
+              <article>
+                <span>Follow-ups</span>
+                <strong>64</strong>
+                <small>Parent reminders queued</small>
+              </article>
+            </div>
+
+            <div class="flow-board" data-panel="academics">
+              <article>
+                <span>Classes</span>
+                <strong>38</strong>
+                <small>Across 3 campuses</small>
+              </article>
+              <article>
+                <span>Marks Pending</span>
+                <strong>214</strong>
+                <small>Midterm assessments</small>
+              </article>
+              <article>
+                <span>Timetable Gaps</span>
+                <strong>5</strong>
+                <small>Teacher conflicts</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Priority</p>
+                <h2>Today</h2>
+              </div>
+            </div>
+            <ul class="task-list">
+              <li>
+                <span class="status-dot urgent"></span>
+                Approve 12 admission applications
+              </li>
+              <li>
+                <span class="status-dot"></span>
+                Send balance reminders to Grade 6 parents
+              </li>
+              <li>
+                <span class="status-dot calm"></span>
+                Publish Form 2 timetable changes
+              </li>
+              <li>
+                <span class="status-dot"></span>
+                Review 9 teacher attendance exceptions
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content-grid lower-grid">
+          <div class="panel table-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Admissions</p>
+                <h2>Recent Applications</h2>
+              </div>
+              <button class="ghost-button" type="button">View All</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Class</th>
+                    <th>Guardian</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="applicationRows">
+                  <tr>
+                    <td>Amani Otieno</td>
+                    <td>Grade 4</td>
+                    <td>Mary Otieno</td>
+                    <td><span class="badge review">Review</span></td>
+                  </tr>
+                  <tr>
+                    <td>Neema Wanjiku</td>
+                    <td>Grade 1</td>
+                    <td>James Mwangi</td>
+                    <td><span class="badge approved">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>Brian Kamau</td>
+                    <td>Grade 7</td>
+                    <td>Lucy Kamau</td>
+                    <td><span class="badge pending">Docs</span></td>
+                  </tr>
+                  <tr>
+                    <td>Zawadi Njoroge</td>
+                    <td>PP2</td>
+                    <td>Faith Njeri</td>
+                    <td><span class="badge review">Review</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel timeline-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">6 month path</p>
+                <h2>Build Roadmap</h2>
+              </div>
+            </div>
+            <ol class="roadmap">
+              <li class="done">
+                <strong>Month 1</strong>
+                <span>Architecture, auth, PostgreSQL foundation</span>
+              </li>
+              <li>
+                <strong>Month 2</strong>
+                <span>Student management and parent records</span>
+              </li>
+              <li>
+                <strong>Month 3</strong>
+                <span>Classes, subjects, exams, reports</span>
+              </li>
+              <li>
+                <strong>Month 4</strong>
+                <span>Invoices, payments, ledger, balances</span>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
