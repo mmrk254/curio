@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: curio-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: CURIO_DB_URL
+        sync: false
+      - key: CURIO_DB_USERNAME
+        sync: false
+      - key: CURIO_DB_PASSWORD
+        sync: false
+      - key: CURIO_ALLOWED_ORIGINS
+        sync: false
